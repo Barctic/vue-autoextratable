@@ -33,10 +33,10 @@ export default {
     })
   },
   template: `
-  <div>
+  <tbody>
   <tr v-for="(item, index) in shadow">
     <slot :item="item" :last="index === shadow.length - 1" :index="index"/>
   </tr>
-  </div>
+  </tbody>
 `
 }
