@@ -1,19 +1,19 @@
 {
-  "name": "vue-autoextra",
-  "version": "0.2.0",
-  "description": "Autoextra for Vue",
-  "main": "dist/vue-autoextra.umd.js",
-  "module": "dist/vue-autoextra.esm.js",
-  "unpkg": "dist/vue-autoextra.min.js",
-  "author": "Wilfred Springer",
+  "name": "vue-autoextratable",
+  "version": "0.4.0",
+  "description": "AutoextraTable for Vue",
+  "main": "dist/vue-autoextratable.umd.js",
+  "module": "dist/vue-autoextratable.esm.js",
+  "unpkg": "dist/vue-autoextratable.min.js",
   "license": "MIT",
   "private": false,
   "scripts": {
     "prepublishOnly": "run-s build",
     "build": "run-p build:*",
-    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-autoextra.umd.js",
-    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-autoextra.esm.js",
-    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextra.min.js",
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-autoextratable.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-autoextratable.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextratable.min.js",
+    "prepare": "npm run build",
     "test": "jest"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "wspringer/vue-autoextra"
+    "url": "barctic/vue-autoextratable"
   },
   "jest": {
     "transform": {

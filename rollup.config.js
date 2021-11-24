@@ -2,7 +2,7 @@ import buble from 'rollup-plugin-buble'; // Transpile/polyfill with reasonable b
 export default {
     input: 'src/component.js', // Path relative to package.json
     output: {
-        name: 'Autoextra',
+        name: 'Autoextratable',
         exports: 'default',
     },
     plugins: [

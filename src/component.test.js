@@ -1,11 +1,14 @@
-import Autoextra from './component'
-import { mount, shallowMount } from '@vue/test-utils'
+import Autoextratable from './component'
+import {
+  mount,
+  shallowMount
+} from '@vue/test-utils'
 
 
-describe('Autoextra', () => {
+describe('Autoextratable', () => {
 
   it('should include a slot for ever item in the collection, plus one extra', done => {
-    const wrapper = mount(Autoextra, {
+    const wrapper = mount(Autoextratable, {
       propsData: {
         collection: [{
           name: 'joe'
@@ -23,7 +26,7 @@ describe('Autoextra', () => {
   })
 
   it('should include yet another entry when editing the extra entry', done => {
-    const wrapper = mount(Autoextra, {
+    const wrapper = mount(Autoextratable, {
       propsData: {
         collection: []
       },

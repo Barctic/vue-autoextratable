@@ -4,13 +4,13 @@ function isEmpty(obj) {
 
 export default {
   props: ['collection'],
-  data () {
+  data() {
     return {
       shadow: [],
       placeholder: {}
     }
   },
-  mounted () {    
+  mounted() {
     this.$watch('collection', (next) => {
       const unregister = this.$watch(
         'placeholder',
@@ -23,18 +23,18 @@ export default {
               this.placeholder = {}
             }
           }
-        }, 
-        { deep: true }
+        }, {
+          deep: true
+        }
       )
-      this.shadow = next ? next.concat(this.placeholder) : [ this.placeholder ]
-    }, { immediate: true })
-  },  
+      this.shadow = next ? next.concat(this.placeholder) : [this.placeholder]
+    }, {
+      immediate: true
+    })
+  },
   template: `
-<div>
-  <div v-for="(item, index) in shadow">
+  <tr v-for="(item, index) in shadow">
     <slot :item="item" :last="index === shadow.length - 1" :index="index"/>
-  </div>
-</div>
+  </tr>
 `
 }
-
