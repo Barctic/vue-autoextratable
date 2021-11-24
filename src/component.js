@@ -34,9 +34,9 @@ export default {
   },
   template: `
   <div>
-    <div v-for="(item, index) in shadow">
-      <slot :item="item" :last="index === shadow.length - 1" :index="index"/>
-    </div>
+  <tr v-for="(item, index) in shadow">
+    <slot :item="item" :last="index === shadow.length - 1" :index="index"/>
+  </tr>
   </div>
 `
 }
