@@ -1,6 +1,6 @@
 {
   "name": "vue-autoextratable",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "AutoextraTable for Vue",
   "main": "dist/vue-autoextratable.umd.js",
   "module": "dist/vue-autoextratable.esm.js",

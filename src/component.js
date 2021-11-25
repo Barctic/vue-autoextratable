@@ -34,7 +34,7 @@ export default {
   },
   template: `
   <tbody>
-  <tr v-for="(item, index) in shadow">
+  <tr v-for="(item, index) in shadow" :class="{ last: last }">
     <slot :item="item" :last="index === shadow.length - 1" :index="index"/>
   </tr>
   </tbody>
